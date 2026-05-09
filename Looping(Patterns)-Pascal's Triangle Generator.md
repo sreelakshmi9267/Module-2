@@ -24,12 +24,24 @@ To write a Python program that generates **Pascal's Triangle** using numbers. Th
 5. Print all rows of Pascal’s Triangle.
 6. End the program.
 
----
-
 ## 🧪 Program
-Add Code Here
+```
+rows = int(input("Enter number of rows: "))
+for i in range(rows):
+    num = 1
+    print(" " * (rows - i), end="")
+    for j in range(i + 1):
+        print(num, end=" ")
+        num = num * (i - j) // (j + 1)
+    print()
+
+```
 
 ## Sample Output
+<img width="1330" height="268" alt="Screenshot 2026-05-09 204617" src="https://github.com/user-attachments/assets/318de77d-f1df-4d56-a856-134ce213a2f3" />
 
-## Result
+
+### Result  
+The program was executed successfully. It accepts the number of rows from the user and generates Pascal’s Triangle using numbers, displaying the correct output.  
+
 
